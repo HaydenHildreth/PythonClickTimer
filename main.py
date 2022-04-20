@@ -15,9 +15,8 @@ def countdown():
     if time_var == 0 or time_var < 0:
         flag = False
     if flag:
-        time_var -= 1
+        time_var -= 0.1
         timer.configure(text=f"Your time left is: {time_var}")
-        time.sleep(1)
     root.after(100, countdown)
 
 
